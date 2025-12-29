@@ -45,3 +45,25 @@ lookup - O(1) occasionally it could be O(n)
 delete - O(1)
 search - O(1)
 */
+
+/*
+In JS objects you can store any kind of values be it string, number, boolean, function. Keys gets stringified.
+
+From ES-6 you actually have something called we Map
+
+This is how you create a Map in JS
+const map = new Map()
+
+
+Diff b/w Map and objects:
+--------------------------
+Maps allows you to create any datatype as key
+In object it you can only save key as string
+
+Maps maintains insertion order
+In object, there is no order
+
+Sets is similar feature availble, it only stores keys no values
+
+const sets = new Set()
+*/
