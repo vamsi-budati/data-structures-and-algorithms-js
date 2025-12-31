@@ -100,3 +100,20 @@ push - O(1)         lookup - O(1)
 insert - O(n)       delete - O(1)
 delete - O(n)
 */
+
+/*
+Hash Tables
+------------
+Fast lookups, needs good collision resolution needed, but dont worry, programming language under the hood takes care of it
+Fast inserts
+Flexible keys
+
+Unordered
+Slow key iteration
+
+Most of the problem having O(n^2), using hash tables we can optimize solution to linear time complexity
+Hash tables are some of the best ways to optimize your code
+With hash tables, space complexity O(n) will be trade-off
+
+To avoid collisions while dealing with hash tables, linkedin list is the best alternate data structure
+*/
