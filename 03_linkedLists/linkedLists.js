@@ -37,3 +37,18 @@ Visual Algo: https://visualgo.net/en/list
 
 JS doesn't actually come with linkedin list built-in
 */
+
+/*
+Why linked lists are best than Arrays and Hash Tables?
+
+Have a sort of loose strcutre that allows you to insert a value to the middle of the list by simply resetting few pointers
+
+Compared to arrays, operations like insert and delete in linked list is way better since array indices have to be changed to all the elements
+Compared to hashtables, data in linked list can be ordered using pointers
+
+Prepend - O(1)
+append - O(1)
+lookup - O(n)
+insert - O(n)
+delete - O(n)
+*/
