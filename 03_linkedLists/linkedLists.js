@@ -33,6 +33,7 @@ a-pointer   ->  b
 */
 
 /*
-JS doesn't actually come with linkedin list built-in
+Visual Algo: https://visualgo.net/en/list
 
+JS doesn't actually come with linkedin list built-in
 */
