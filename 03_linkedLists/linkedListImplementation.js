@@ -8,7 +8,7 @@ class LinkedList {
     // O(1)
     append(data) {
         const newNode = new ListNode(data);
-        this.head.next = newNode;
+        this.tail.next = newNode;
         this.tail = newNode;
         this.length++;
     }
@@ -31,6 +31,8 @@ class LinkedList {
     */
     insert(index, data) {
         if(index > this.length - 1) {
+            this.append(data);
+            this.length++;
             return;
         }
 
@@ -121,10 +123,13 @@ class ListNode {
 
 const linkedList = new LinkedList(10)
 linkedList.append(20)
+linkedList.append(40)
+
+
 linkedList.prepend(30)
 // console.log(JSON.stringify(linkedList))
 linkedList.insert(1, 5)
-// console.log(JSON.stringify(linkedList))
+console.log(JSON.stringify(linkedList))
 linkedList.delete(1)
 console.log(JSON.stringify(linkedList))
 console.log(linkedList.printList())
