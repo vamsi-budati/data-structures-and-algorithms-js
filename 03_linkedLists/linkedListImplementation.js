@@ -36,6 +36,7 @@ class LinkedList {
 
         if(index == 0) {
             this.prepend(data);
+            this.length++;
             return;
         }
 
