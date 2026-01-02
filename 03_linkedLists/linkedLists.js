@@ -52,3 +52,9 @@ lookup - O(n)
 insert - O(n)
 delete - O(n)
 */
+
+/* 
+What is a pointer?
+
+Pointer is something which is a reference to an object/value
+*/
