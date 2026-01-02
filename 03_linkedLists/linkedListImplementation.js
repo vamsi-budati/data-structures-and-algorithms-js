@@ -2,7 +2,7 @@ class LinkedList {
     constructor(data) {
         this.head = new ListNode(data);
         this.tail = this.head;
-        this.length = 1;
+        this.size = 1;
     }
 
     // O(1)
@@ -10,7 +10,7 @@ class LinkedList {
         const newNode = new ListNode(data);
         this.tail.next = newNode;
         this.tail = newNode;
-        this.length++;
+        this.size++;
     }
 
     // O(1)
@@ -18,7 +18,7 @@ class LinkedList {
         const newNode = new ListNode(data);
         newNode.next = this.head
         this.head = newNode;
-        this.length++;
+        this.size++;
     }
 
     /* 
@@ -30,15 +30,15 @@ class LinkedList {
     Time complexity - O(n)
     */
     insert(index, data) {
-        if(index > this.length - 1) {
+        if(index > this.size - 1) {
             this.append(data);
-            this.length++;
+            this.size++;
             return;
         }
 
         if(index == 0) {
             this.prepend(data);
-            this.length++;
+            this.size++;
             return;
         }
 
@@ -53,7 +53,7 @@ class LinkedList {
         }
         newNode.next = current;
         prev.next = newNode;
-        this.length++;
+        this.size++;
     }
 
     /*
@@ -61,17 +61,17 @@ class LinkedList {
     2. If index == 0, just do this.head = this.head.next and decrement length
     3. Iterate i < index, and assign prev = current & current = current.next
     4. Make prev.next = current.next
-    5. If index == this.length - 1 then this.tail = prev;
+    5. If index == this.size - 1 then this.tail = prev;
     6. Decrement length
     */
     delete(index) {
-        if(index > this.length - 1) {
+        if(index > this.size - 1) {
             return;
         }
 
         if(index == 0) {
             this.head = this.head.next;
-            this.length--;
+            this.size--;
             return;
         }
 
@@ -85,10 +85,10 @@ class LinkedList {
         }
 
         prev.next = current.next;
-        if(index == this.length - 1) {
+        if(index == this.size - 1) {
             this.tail = prev;
         }
-        this.length--;
+        this.size--;
     }
 
     /*
@@ -110,7 +110,7 @@ class LinkedList {
     }
 
     length() {
-        return this.length;
+        return this.size;
     }
 }
 
