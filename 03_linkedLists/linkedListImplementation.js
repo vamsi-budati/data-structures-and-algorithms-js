@@ -112,6 +112,20 @@ class LinkedList {
     length() {
         return this.size;
     }
+
+    /*
+    1. Create a new linkedlist with the head element
+    2. Traverse through nodes in the list and prepend
+    */
+    reverse() {
+        const linkedList = new LinkedList(this.head.data);
+        let current = this.head.next;
+        while(current != null) {
+            linkedList.prepend(current.data);
+            current = current.next;
+        }
+        return linkedList;
+    }
 }
 
 class ListNode {
@@ -133,3 +147,5 @@ console.log(JSON.stringify(linkedList))
 linkedList.delete(1)
 console.log(JSON.stringify(linkedList))
 console.log(linkedList.printList())
+
+console.log(linkedList.reverse().printList())
