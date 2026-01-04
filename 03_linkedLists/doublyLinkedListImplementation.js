@@ -94,8 +94,9 @@ class DoublyLinkedList {
             i++;
         }
 
+        current.next.prev = prev;
         prev.next = current.next;
-        prev.prev = current.prev;
+        // prev.prev = current.prev;
         if(index == this.size - 1) {
             this.tail = prev;
         }
