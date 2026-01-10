@@ -26,7 +26,7 @@ class Stack {
         }
     }
 }
-
+ 
 let stack = new Stack();
 
 stack.push('Vamsi')
