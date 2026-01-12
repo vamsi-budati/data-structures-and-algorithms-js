@@ -36,6 +36,9 @@ class Queue {
     4. Decrement size as element gets removes out of the queue
     */
     dequeue() {
+        if(!this.size) {
+            return null;
+        }
         const dequeuedElement = this.first;
         this.first = this.first.next;
         this.last = (this.size == 1) ? null : this.last;
@@ -74,6 +77,7 @@ console.log('Peek Element', queue.peek());
 console.log(queue.dequeue())
 console.log(queue.dequeue())
 console.log(JSON.stringify(queue))
+console.log(queue.dequeue())
 console.log(queue.dequeue())
 console.log(queue.dequeue())
 
