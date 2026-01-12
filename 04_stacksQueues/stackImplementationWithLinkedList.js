@@ -43,11 +43,11 @@ stack.push('Google');
 stack.push('Udemy');
 stack.push('Discord');
 
-console.log('Before pop', stack)
-console.log(stack.pop())
-console.log('Peek', stack.peek())
-console.log('After pop', stack)
-console.log(stack.pop())
-console.log('After pop', stack)
-console.log(stack.pop())
-console.log('After pop', stack)
+console.log('Before pop', JSON.stringify(stack))
+// console.log(stack.pop())
+// console.log('Peek', stack.peek())
+// console.log('After pop', stack)
+// console.log(stack.pop())
+// console.log('After pop', stack)
+// console.log(stack.pop())
+// console.log('After pop', stack)
