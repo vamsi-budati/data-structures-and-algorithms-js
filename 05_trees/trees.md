@@ -83,11 +83,9 @@ Cons:
 ## Heaps
 
 ### Binary Heap
-Every node on top of it value is greater that their child.
+Every node on top of it, value is greater than their child.
 
-Unlike binary search tree, there is no order from left to right.
-
-They take lease amount of space possible, it always left to right, no need of balancing.
+They take less amount of space possible, it always left to right, no need of balancing.
 
 Because they do left to right, they preserve order of insertion.
 
@@ -98,5 +96,5 @@ Specialized tree used for searching with text.
 
 Useful while dealing with Strings
 
-Providing text auto suggestions.
+Provides text auto suggestions.
 
