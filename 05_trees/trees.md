@@ -58,3 +58,24 @@ lookup - O(log n)
 insert - O(log n)
 delete - O(log n)
 ``` 
+
+## Balanced vs Unbalanced binary search tree
+```
+Balanced
+O(log n)
+
+Unbalanced - Could become linkedlist
+O(n)
+```
+
+**How do we make binary tree balanced?**
+
+Using alogirthms like AVL Tree, Red Black Tree
+
+Pros:
+- Better than O(n)
+- Ordered
+- Flexible Size
+
+Cons:
+- No O(1) operations
