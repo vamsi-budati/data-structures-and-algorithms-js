@@ -24,3 +24,9 @@ With graphs we can also have information in the edges.
 
 1. Cyclic(no arrows)
 2. Acyclic 
+
+**Graphs are really useful when it comes to Relationships**
+
+**Scaling is hard**
+
+https://neo4j.com/ this will help us create Graph databases
