@@ -30,3 +30,17 @@ Its good for tasks that has repeated tasks
 
 **Downsides**
 - You have to be very careful to break the recursion upon meeting the criteria, otherwise it leads to stackoverflow as it ends up running infinite times.
+
+
+**Anythig you do with recursion, that can be done in iterative(loop) approach**
+
+https://2ality.com/2015/06/tail-call-optimization.html
+
+**Though recursion gives us advantage of code readability, it consumes memory(call stack), high time complexity and if not handled properly it could lead stackoverflow**
+
+
+**When to use Recursion?**
+
+Everytime you are using a tree or converting something into tree, consider recursion.
+
+Divide and conquer using Recursion.
