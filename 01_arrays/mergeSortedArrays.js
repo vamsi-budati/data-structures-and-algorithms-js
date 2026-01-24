@@ -17,6 +17,7 @@ function mergeSortedArrays(arrOne, arrTwo) {
     return arrOne.concat(arrTwo).sort((a, b) => (a - b));
 }
 
+
 /*
 Solution 2
 
@@ -85,4 +86,4 @@ function mergeSortedArrays(arrOne, arrTwo) {
     return mergedArr;
 }
 
-console.log(mergeSortedArrays([0, 3, 4], [4, 6, 30]))
+console.log(mergeSortedArrays([0, 3, 4], [4, 6, 30]));
