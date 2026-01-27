@@ -14,11 +14,29 @@ function selectionSort(array) {
         if(i !== (arrayLength - 1)) {
             array.splice(smallestElemIndex, 1)
             array.splice(i, 0, smallest)
+            array[i] = array[smallest];
             smallest = array[i+1];
         }
     }
 }
 
-selectionSort(numbers);
+
+function selectionSortOne(array) {
+    let arrayLength = array.length;
+    for (let i = 0; i < arrayLength; i++) {
+        let smallestElemIndex = i;
+        let temp = array[i];
+        for (let j = i; j < arrayLength; j++) {
+            if(array[smallestElemIndex] > array[j]) {
+                smallestElemIndex = j;
+            }
+        }
+        if(i !== (arrayLength - 1)) {
+            array[i] = array[smallestElemIndex];
+            array[smallestElemIndex] = temp;
+        }
+    }
+}
+selectionSortOne(numbers);
 
 console.log(numbers);

@@ -35,6 +35,6 @@ There are a lot of sorting alogrithms.
 ## Selection Sort
 
 - One of the simplest and lease efficient sorting alogrithms
-- It runs on selecting the smallest elements of one against each other and swaps to the top
+- It runs on selecting the smallest elements of one against each other and swaps to the top/next in the list
 - Time Complexity: O(n^2)
 - Space complexity: O(1)
