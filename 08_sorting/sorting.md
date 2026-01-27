@@ -30,3 +30,11 @@ There are a lot of sorting alogrithms.
 
 - One of the Simplest and least efficient sorting algorithm
 - Time Complexity: O(n^2)
+- Space complexity: O(1)
+
+## Selection Sort
+
+- One of the simplest and lease efficient sorting alogrithms
+- It runs on selecting the smallest elements of one against each other and swaps to the top
+- Time Complexity: O(n^2)
+- Space complexity: O(1)
