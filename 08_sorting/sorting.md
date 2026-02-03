@@ -38,3 +38,4 @@ There are a lot of sorting alogrithms.
 - It runs on selecting the smallest elements of one against each other and swaps to the top/next in the list
 - Time Complexity: O(n^2)
 - Space complexity: O(1)
+
